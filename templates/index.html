@@ -1,0 +1,1273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>MedTrack | Hospital Asset Tracking System</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+
+    <style>
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            background-color: #f5f8fc;
+            color: #172033;
+        }
+
+
+        /* ================= NAVBAR ================= */
+
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar-brand {
+            font-size: 1.5rem;
+        }
+
+        .nav-link {
+            color: white !important;
+            margin-left: 15px;
+            font-weight: 500;
+        }
+
+        .nav-link:hover {
+            color: #dbeafe !important;
+        }
+
+
+        /* ================= HERO ================= */
+
+        .hero {
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(
+                135deg,
+                #f5f8fc,
+                #e8f1ff
+            );
+        }
+
+        .hero-title {
+            font-size: 3.5rem;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        .hero-text {
+            font-size: 1.15rem;
+            color: #6c757d;
+            max-width: 650px;
+        }
+
+        .hospital-card {
+            border: none;
+            border-radius: 20px;
+        }
+
+        .hospital-icon {
+            font-size: 5rem;
+        }
+
+
+        /* ================= SECTION ================= */
+
+        .section-title {
+            font-weight: 700;
+            color: #172033;
+        }
+
+        .section-subtitle {
+            color: #6c757d;
+        }
+
+
+        /* ================= FEATURE CARDS ================= */
+
+        .feature-card {
+            border: none;
+            border-radius: 15px;
+            transition: 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-7px);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+        }
+
+
+        /* ================= ABOUT ================= */
+
+        .about-card {
+            border: none;
+            border-radius: 15px;
+        }
+
+
+        /* ================= CONTACT ================= */
+
+        #contact {
+            scroll-margin-top: 80px;
+        }
+
+        .contact-card {
+            border: none;
+            border-radius: 15px;
+        }
+
+
+        /* ================= FOOTER ================= */
+
+        footer {
+            background-color: #172033;
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- ==================================================
+     NAVBAR
+================================================== -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow">
+
+    <div class="container">
+
+
+        <!-- LOGO -->
+
+        <a
+            class="navbar-brand fw-bold"
+            href="#home">
+
+            🏥 MedTrack
+
+        </a>
+
+
+        <!-- NAVIGATION -->
+
+        <div class="navbar-nav ms-auto">
+
+            <a
+                class="nav-link"
+                href="#home">
+
+                Home
+
+            </a>
+
+
+            <a
+                class="nav-link"
+                href="#features">
+
+                Features
+
+            </a>
+
+
+            <a
+                class="nav-link"
+                href="#about">
+
+                About
+
+            </a>
+
+
+            <a
+                class="nav-link"
+                href="#contact">
+
+                Contact
+
+            </a>
+
+
+            <a
+                class="nav-link"
+                href="/login">
+
+                Login
+
+            </a>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+
+<!-- ==================================================
+     HERO / HOME
+================================================== -->
+
+<section
+    id="home"
+    class="hero">
+
+    <div class="container">
+
+        <div class="row align-items-center">
+
+
+            <!-- LEFT -->
+
+            <div class="col-lg-7">
+
+
+                <h1
+                    class="hero-title text-primary">
+
+                    Smart Hospital
+                    <br>
+
+                    Asset Tracking
+
+                </h1>
+
+
+                <p
+                    class="hero-text mt-4">
+
+                    MedTrack is a smart hospital asset
+                    tracking system designed to help
+                    hospitals monitor equipment,
+                    maintenance schedules, availability
+                    and missing assets efficiently.
+
+                </p>
+
+
+                <div
+                    class="mt-4 d-flex gap-3 flex-wrap">
+
+
+                    <a
+                        href="/login"
+                        class="btn btn-primary btn-lg">
+
+                        🔐 Admin Login
+
+                    </a>
+
+
+                    <a
+                        href="#features"
+                        class="btn btn-outline-primary btn-lg">
+
+                        Explore Features
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- RIGHT -->
+
+            <div
+                class="col-lg-5 text-center mt-5 mt-lg-0">
+
+
+                <div
+                    class="card hospital-card shadow-lg p-5">
+
+
+                    <div
+                        class="hospital-icon">
+
+                        🏥
+
+                    </div>
+
+
+                    <h2
+                        class="fw-bold mt-3">
+
+                        MedTrack
+
+                    </h2>
+
+
+                    <p
+                        class="text-muted">
+
+                        Hospital Asset Tracking System
+
+                    </p>
+
+
+                    <hr>
+
+
+                    <div
+                        class="row text-center">
+
+
+                        <div class="col-4">
+
+                            <div class="fs-3">
+                                📦
+                            </div>
+
+                            <small>
+                                Equipment
+                            </small>
+
+                        </div>
+
+
+                        <div class="col-4">
+
+                            <div class="fs-3">
+                                🔧
+                            </div>
+
+                            <small>
+                                Maintenance
+                            </small>
+
+                        </div>
+
+
+                        <div class="col-4">
+
+                            <div class="fs-3">
+                                🚨
+                            </div>
+
+                            <small>
+                                Alerts
+                            </small>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     FEATURES
+================================================== -->
+
+<section
+    id="features"
+    class="py-5">
+
+    <div class="container">
+
+
+        <div
+            class="text-center mb-5">
+
+            <h2
+                class="section-title">
+
+                ✨ MedTrack Features
+
+            </h2>
+
+
+            <p
+                class="section-subtitle">
+
+                Everything you need for efficient
+                hospital asset management.
+
+            </p>
+
+        </div>
+
+
+
+        <div
+            class="row g-4">
+
+
+            <!-- FEATURE 1 -->
+
+            <div
+                class="col-md-4">
+
+                <div
+                    class="card feature-card
+                           shadow-sm
+                           text-center
+                           p-4
+                           h-100">
+
+
+                    <div
+                        class="feature-icon">
+
+                        📦
+
+                    </div>
+
+
+                    <h4
+                        class="fw-bold mt-3">
+
+                        Equipment Tracking
+
+                    </h4>
+
+
+                    <p
+                        class="text-muted">
+
+                        Track hospital equipment,
+                        equipment IDs, departments
+                        and their current status.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- FEATURE 2 -->
+
+            <div
+                class="col-md-4">
+
+                <div
+                    class="card feature-card
+                           shadow-sm
+                           text-center
+                           p-4
+                           h-100">
+
+
+                    <div
+                        class="feature-icon">
+
+                        🔧
+
+                    </div>
+
+
+                    <h4
+                        class="fw-bold mt-3">
+
+                        Maintenance Management
+
+                    </h4>
+
+
+                    <p
+                        class="text-muted">
+
+                        Record maintenance dates,
+                        notes and maintain complete
+                        maintenance history.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- FEATURE 3 -->
+
+            <div
+                class="col-md-4">
+
+                <div
+                    class="card feature-card
+                           shadow-sm
+                           text-center
+                           p-4
+                           h-100">
+
+
+                    <div
+                        class="feature-icon">
+
+                        🚨
+
+                    </div>
+
+
+                    <h4
+                        class="fw-bold mt-3">
+
+                        Maintenance Alerts
+
+                    </h4>
+
+
+                    <p
+                        class="text-muted">
+
+                        Quickly identify equipment
+                        that requires maintenance
+                        and take action on time.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- FEATURE 4 -->
+
+            <div
+                class="col-md-4">
+
+                <div
+                    class="card feature-card
+                           shadow-sm
+                           text-center
+                           p-4
+                           h-100">
+
+
+                    <div
+                        class="feature-icon">
+
+                        📊
+
+                    </div>
+
+
+                    <h4
+                        class="fw-bold mt-3">
+
+                        Status Analytics
+
+                    </h4>
+
+
+                    <p
+                        class="text-muted">
+
+                        View available, maintenance
+                        and missing equipment through
+                        simple dashboard analytics.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- FEATURE 5 -->
+
+            <div
+                class="col-md-4">
+
+                <div
+                    class="card feature-card
+                           shadow-sm
+                           text-center
+                           p-4
+                           h-100">
+
+
+                    <div
+                        class="feature-icon">
+
+                        🔍
+
+                    </div>
+
+
+                    <h4
+                        class="fw-bold mt-3">
+
+                        Easy Monitoring
+
+                    </h4>
+
+
+                    <p
+                        class="text-muted">
+
+                        Manage hospital assets from
+                        one centralized system.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- FEATURE 6 -->
+
+            <div
+                class="col-md-4">
+
+                <div
+                    class="card feature-card
+                           shadow-sm
+                           text-center
+                           p-4
+                           h-100">
+
+
+                    <div
+                        class="feature-icon">
+
+                        🔐
+
+                    </div>
+
+
+                    <h4
+                        class="fw-bold mt-3">
+
+                        Admin Access
+
+                    </h4>
+
+
+                    <p
+                        class="text-muted">
+
+                        Secure admin login provides
+                        controlled access to hospital
+                        asset information.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     ABOUT
+================================================== -->
+
+<section
+    id="about"
+    class="py-5 bg-white">
+
+    <div class="container">
+
+
+        <div
+            class="card about-card
+                   shadow-sm">
+
+            <div
+                class="card-body p-5">
+
+
+                <div
+                    class="row align-items-center">
+
+
+                    <div
+                        class="col-lg-6">
+
+
+                        <h2
+                            class="section-title">
+
+                            🏥 About MedTrack
+
+                        </h2>
+
+
+                        <p
+                            class="text-muted mt-4">
+
+                            MedTrack is a hospital asset
+                            tracking and management system
+                            developed to simplify the way
+                            medical equipment is monitored.
+
+                        </p>
+
+
+                        <p
+                            class="text-muted">
+
+                            The system allows administrators
+                            to add, edit and delete equipment,
+                            monitor equipment status, track
+                            maintenance and maintain
+                            maintenance history.
+
+                        </p>
+
+
+                        <p
+                            class="text-muted">
+
+                            MedTrack helps hospitals reduce
+                            equipment loss, improve maintenance
+                            planning and keep important asset
+                            information organized.
+
+                        </p>
+
+                    </div>
+
+
+
+                    <div
+                        class="col-lg-6
+                               text-center
+                               mt-4
+                               mt-lg-0">
+
+
+                        <div
+                            class="display-1">
+
+                            🏥
+
+                        </div>
+
+
+                        <h4
+                            class="fw-bold mt-3">
+
+                            Smart Healthcare
+                            Asset Management
+
+                        </h4>
+
+
+                        <p
+                            class="text-muted">
+
+                            Simple • Efficient • Organized
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     HOW IT WORKS
+================================================== -->
+
+<section
+    class="py-5">
+
+    <div class="container">
+
+
+        <div
+            class="text-center mb-5">
+
+            <h2
+                class="section-title">
+
+                ⚙️ How MedTrack Works
+
+            </h2>
+
+        </div>
+
+
+        <div
+            class="row g-4 text-center">
+
+
+            <div class="col-md-4">
+
+                <div
+                    class="card shadow-sm
+                           border-0
+                           p-4
+                           h-100">
+
+                    <div class="display-5">
+                        🔐
+                    </div>
+
+                    <h5
+                        class="fw-bold mt-3">
+
+                        1. Admin Login
+
+                    </h5>
+
+                    <p
+                        class="text-muted">
+
+                        Administrator securely
+                        logs into the system.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="col-md-4">
+
+                <div
+                    class="card shadow-sm
+                           border-0
+                           p-4
+                           h-100">
+
+                    <div class="display-5">
+                        📊
+                    </div>
+
+                    <h5
+                        class="fw-bold mt-3">
+
+                        2. Monitor Assets
+
+                    </h5>
+
+                    <p
+                        class="text-muted">
+
+                        View equipment,
+                        departments and
+                        current status.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="col-md-4">
+
+                <div
+                    class="card shadow-sm
+                           border-0
+                           p-4
+                           h-100">
+
+                    <div class="display-5">
+                        🔧
+                    </div>
+
+                    <h5
+                        class="fw-bold mt-3">
+
+                        3. Manage Maintenance
+
+                    </h5>
+
+                    <p
+                        class="text-muted">
+
+                        Add maintenance records
+                        and monitor upcoming
+                        maintenance.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     CONTACT
+================================================== -->
+
+<section
+    id="contact"
+    class="py-5 bg-light">
+
+    <div class="container">
+
+
+        <div
+            class="text-center mb-5">
+
+            <h2
+                class="section-title text-primary">
+
+                📞 Contact & Help
+
+            </h2>
+
+
+            <p
+                class="section-subtitle">
+
+                Need help with MedTrack?
+                We're here to help.
+
+            </p>
+
+        </div>
+
+
+
+        <div
+            class="row g-4">
+
+
+            <!-- CONTACT INFORMATION -->
+
+            <div
+                class="col-lg-5">
+
+
+                <div
+                    class="card contact-card
+                           shadow-sm
+                           h-100">
+
+
+                    <div
+                        class="card-body p-4">
+
+
+                        <h4
+                            class="fw-bold mb-4">
+
+                            🏥 MedTrack Support
+
+                        </h4>
+
+
+                        <p
+                            class="text-muted">
+
+                            Contact the hospital
+                            administration for equipment
+                            issues, maintenance requests
+                            or technical support.
+
+                        </p>
+
+
+                        <hr>
+
+
+                        <p>
+
+                            <strong>
+                                📍 Address
+                            </strong>
+
+                            <br>
+
+                            Bangalore, Karnataka, India
+
+                        </p>
+
+
+                        <p>
+
+                            <strong>
+                                📞 Phone
+                            </strong>
+
+                            <br>
+
+                            +91 XXXXX XXXXX
+
+                        </p>
+
+
+                        <p>
+
+                            <strong>
+                                ✉️ Email
+                            </strong>
+
+                            <br>
+
+                            support@medtrack.com
+
+                        </p>
+
+
+                        <div
+                            class="alert alert-danger mt-4">
+
+                            <strong>
+                                🚨 Emergency Issue
+                            </strong>
+
+                            <br>
+
+                            For critical equipment
+                            problems, immediately
+                            contact the hospital
+                            administration.
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- CONTACT FORM -->
+
+            <div
+                class="col-lg-7">
+
+
+                <div
+                    class="card contact-card
+                           shadow-sm">
+
+
+                    <div
+                        class="card-body p-4">
+
+
+                        <h4
+                            class="fw-bold mb-4">
+
+                            💬 Send Us a Message
+
+                        </h4>
+
+
+                        <form
+                            onsubmit="
+                            alert('Thank you! Your message has been submitted.');
+                            return false;
+                            ">
+
+
+                            <div class="mb-3">
+
+                                <label
+                                    class="form-label fw-semibold">
+
+                                    Name
+
+                                </label>
+
+
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="Enter your name"
+                                    required>
+
+                            </div>
+
+
+
+                            <div class="mb-3">
+
+                                <label
+                                    class="form-label fw-semibold">
+
+                                    Email
+
+                                </label>
+
+
+                                <input
+                                    type="email"
+                                    class="form-control"
+                                    placeholder="Enter your email"
+                                    required>
+
+                            </div>
+
+
+
+                            <div class="mb-3">
+
+                                <label
+                                    class="form-label fw-semibold">
+
+                                    Subject
+
+                                </label>
+
+
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="Enter subject"
+                                    required>
+
+                            </div>
+
+
+
+                            <div class="mb-3">
+
+                                <label
+                                    class="form-label fw-semibold">
+
+                                    Message
+
+                                </label>
+
+
+                                <textarea
+                                    class="form-control"
+                                    rows="5"
+                                    placeholder="Enter your message"
+                                    required></textarea>
+
+                            </div>
+
+
+
+                            <button
+                                type="submit"
+                                class="btn btn-primary">
+
+                                📤 Send Message
+
+                            </button>
+
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     FOOTER
+================================================== -->
+
+<footer
+    class="text-white
+           text-center
+           py-4">
+
+
+    <div class="container">
+
+
+        <h5 class="fw-bold">
+
+            🏥 MedTrack
+
+        </h5>
+
+
+        <p class="mb-1">
+
+            Smart Hospital Asset Tracking System
+
+        </p>
+
+
+        <small>
+
+            © 2026 MedTrack |
+            Hospital Asset Tracking System
+
+        </small>
+
+
+    </div>
+
+</footer>
+
+
+
+<!-- Bootstrap JS -->
+
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js">
+</script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Contact & Help | MedTrack</title>
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+</head>
+
+
+<body class="bg-light">
+
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar navbar-dark bg-primary shadow">
+
+    <div class="container">
+
+        <a
+            class="navbar-brand fw-bold fs-3"
+            href="/dashboard">
+
+            🏥 MedTrack
+
+        </a>
+
+
+        <div>
+
+            <a
+                href="/dashboard"
+                class="btn btn-light me-2">
+
+                ← Dashboard
+
+            </a>
+
+            <a
+                href="/logout"
+                class="btn btn-outline-light">
+
+                Logout
+
+            </a>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+<!-- ================= MAIN ================= -->
+
+<div class="container py-5">
+
+
+    <div class="text-center mb-5">
+
+        <h1 class="text-primary fw-bold">
+
+            📞 Contact & Help
+
+        </h1>
+
+        <p class="text-muted">
+
+            Get assistance with the MedTrack
+            Hospital Asset Tracking System.
+
+        </p>
+
+    </div>
+
+
+    <div class="row g-4">
+
+
+        <!-- CONTACT INFORMATION -->
+
+        <div class="col-lg-5">
+
+            <div class="card shadow border-0 h-100">
+
+                <div class="card-body p-4">
+
+                    <h3 class="fw-bold mb-4">
+
+                        🏥 MedTrack Support
+
+                    </h3>
+
+
+                    <p class="text-muted">
+
+                        For equipment-related issues,
+                        maintenance requests, missing
+                        equipment, or technical support,
+                        contact the hospital administration.
+
+                    </p>
+
+
+                    <hr>
+
+
+                    <h6 class="fw-bold">
+
+                        🏥 Hospital
+
+                    </h6>
+
+                    <p class="text-muted">
+
+                        MVJ Medical College and
+                        Research Hospital
+
+                    </p>
+
+
+                    <h6 class="fw-bold">
+
+                        📍 Address
+
+                    </h6>
+
+                    <p class="text-muted">
+
+                        Bangalore, Karnataka, India
+
+                    </p>
+
+
+                    <h6 class="fw-bold">
+
+                        📞 Contact
+
+                    </h6>
+
+                    <p class="text-muted">
+
+                        +91 XXXXX XXXXX
+
+                    </p>
+
+
+                    <h6 class="fw-bold">
+
+                        ✉️ Email
+
+                    </h6>
+
+                    <p class="text-muted">
+
+                        support@medtrack.com
+
+                    </p>
+
+
+                    <div class="alert alert-danger mt-4">
+
+                        <strong>
+                            🚨 Emergency Equipment Issue
+                        </strong>
+
+                        <br>
+
+                        For critical equipment problems,
+                        immediately contact the hospital
+                        administration.
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- CONTACT FORM -->
+
+        <div class="col-lg-7">
+
+            <div class="card shadow border-0">
+
+                <div class="card-body p-4">
+
+                    <h3 class="fw-bold mb-4">
+
+                        💬 Send a Message
+
+                    </h3>
+
+
+                    <form
+                        onsubmit="
+                        alert('Thank you! Your message has been submitted.');
+                        return false;
+                        ">
+
+
+                        <div class="mb-3">
+
+                            <label class="form-label fw-semibold">
+
+                                Name
+
+                            </label>
+
+                            <input
+                                type="text"
+                                class="form-control"
+                                placeholder="Enter your name"
+                                required>
+
+                        </div>
+
+
+                        <div class="mb-3">
+
+                            <label class="form-label fw-semibold">
+
+                                Email
+
+                            </label>
+
+                            <input
+                                type="email"
+                                class="form-control"
+                                placeholder="Enter your email"
+                                required>
+
+                        </div>
+
+
+                        <div class="mb-3">
+
+                            <label class="form-label fw-semibold">
+
+                                Issue Type
+
+                            </label>
+
+                            <select
+                                class="form-select"
+                                required>
+
+                                <option value="">
+
+                                    Select an issue
+
+                                </option>
+
+                                <option>
+                                    Equipment Issue
+                                </option>
+
+                                <option>
+                                    Maintenance Request
+                                </option>
+
+                                <option>
+                                    Missing Equipment
+                                </option>
+
+                                <option>
+                                    Login / Account Issue
+                                </option>
+
+                                <option>
+                                    Technical Support
+                                </option>
+
+                                <option>
+                                    Other
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="mb-4">
+
+                            <label class="form-label fw-semibold">
+
+                                Message
+
+                            </label>
+
+                            <textarea
+                                class="form-control"
+                                rows="5"
+                                placeholder="Describe your issue..."
+                                required></textarea>
+
+                        </div>
+
+
+                        <button
+                            type="submit"
+                            class="btn btn-primary">
+
+                            📤 Send Message
+
+                        </button>
+
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer
+    class="bg-primary
+           text-white
+           text-center
+           py-4
+           mt-5">
+
+    <h5>
+
+        🏥 MedTrack
+
+    </h5>
+
+    <p class="mb-1">
+
+        Smart Hospital Asset Tracking System
+
+    </p>
+
+    <small>
+
+        © 2026 MedTrack | Hospital Asset Tracking System
+
+    </small>
+
+</footer>
+
+
+</body>
+
+</html>
