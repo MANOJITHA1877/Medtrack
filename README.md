@@ -33,8 +33,6 @@ The platform provides equipment status tracking, maintenance alerts, equipment m
 | PDF Generation | ReportLab |
 | Development | Visual Studio Code |
 
----
-
 ## 📸 Screenshots
 
 ### 🏠 Home Page
@@ -61,7 +59,9 @@ The platform provides equipment status tracking, maintenance alerts, equipment m
 
 ---
 
-## 📊 Dashboard
+### 📄 Report Generation
+
+![MedTrack Report](screenshots/report.png)
 
 The MedTrack dashboard provides a centralized view of hospital equipment and includes:
 
