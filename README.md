@@ -1,33 +1,133 @@
 # 🏥 MedTrack – Smart Hospital Asset Management Platform
 
-## 📌 Overview
+MedTrack is a web-based Smart Hospital Asset Management Platform designed to help hospitals efficiently track, monitor, and manage medical equipment from a centralized dashboard.
 
-**MedTrack** is a web-based Smart Hospital Asset Management Platform designed to help hospitals efficiently track and manage medical equipment.
+The platform provides equipment status tracking, maintenance alerts, equipment management, analytics, and PDF report generation.
 
-The system provides a centralized dashboard for monitoring equipment status, departments, maintenance schedules, alerts, and maintenance records.
+---
 
 ## ✨ Key Features
 
-- 📊 **Interactive Dashboard** – View overall hospital equipment statistics.
-- 🏥 **Department Management** – Filter equipment by department.
-- 🔍 **Equipment Search** – Search equipment by ID or equipment name.
+- 📊 **Interactive Dashboard** – View hospital equipment statistics at a glance.
+- 🏥 **Department Management** – Filter equipment based on department.
+- 🔍 **Equipment Search** – Search equipment by ID or name.
 - 🚦 **Status Tracking** – Monitor Available, Maintenance, and Missing equipment.
 - 🔔 **Maintenance Alerts** – Identify upcoming and overdue maintenance.
-- 🛠️ **Maintenance Records** – Add and manage equipment maintenance information.
+- 🛠️ **Maintenance Records** – Maintain equipment maintenance information.
 - 👁️ **Equipment Details** – View detailed equipment information.
 - ✏️ **Equipment Management** – Add, edit, view, and delete equipment.
 - 📈 **Status Analytics** – Visualize equipment status using charts.
-- 📄 **PDF Report Generation** – Generate and download hospital equipment reports.
-- 🔐 **Admin Login** – Provide administrator access to the management dashboard.
+- 📄 **PDF Report Generation** – Generate downloadable equipment reports.
+- 🔐 **Admin Login** – Restrict access to the management dashboard.
+
+---
 
 ## 🛠️ Technologies Used
 
-- **Frontend:** HTML, CSS, Bootstrap, JavaScript
-- **Backend:** Python, Flask
-- **Database:** SQLite
-- **Charts:** Chart.js
-- **PDF Generation:** ReportLab
-- **Development Environment:** Visual Studio Code
+| Category | Technologies |
+|---|---|
+| Frontend | HTML, CSS, Bootstrap, JavaScript |
+| Backend | Python, Flask |
+| Database | SQLite |
+| Charts | Chart.js |
+| PDF Generation | ReportLab |
+| Development | Visual Studio Code |
+
+---
+
+## 📸 Screenshots
+
+### 🏠 Home Page
+
+![MedTrack Home Page](screenshots/home.png)
+
+---
+
+### 📊 Dashboard
+
+![MedTrack Dashboard](screenshots/dashboard.png)
+
+---
+
+### ✨ Features
+
+![MedTrack Features](screenshots/features.png)
+
+---
+
+### 🏥 Equipment Management
+
+![MedTrack Equipment Management](screenshots/Equipments.png)
+
+---
+
+## 📊 Dashboard
+
+The MedTrack dashboard provides a centralized view of hospital equipment and includes:
+
+- Total equipment count
+- Available equipment
+- Equipment under maintenance
+- Missing equipment
+- Maintenance alerts
+- Equipment status analytics
+- Equipment search
+- Department filtering
+- Equipment management actions
+
+---
+
+## 🔔 Maintenance Management
+
+MedTrack helps administrators monitor equipment maintenance schedules.
+
+Administrators can:
+
+- Add maintenance information
+- View maintenance records
+- Track maintenance dates
+- Identify upcoming maintenance
+- Monitor equipment requiring attention
+
+---
+
+## 📄 PDF Report Generation
+
+MedTrack includes a PDF report generation feature that allows administrators to generate downloadable hospital equipment reports.
+
+The generated report can include:
+
+- Equipment summary
+- Equipment status
+- Available equipment
+- Equipment under maintenance
+- Missing equipment
+- Maintenance information
+- Equipment details
+
+---
+
+## 🏥 Equipment Management
+
+Administrators can manage hospital equipment through the platform.
+
+### Available operations
+
+- ➕ Add equipment
+- 👁️ View equipment
+- ✏️ Edit equipment
+- 🗑️ Delete equipment
+- 🔍 Search equipment
+- 🏥 Filter by department
+- 🚦 Filter by equipment status
+
+---
+
+## 🔐 Admin Login
+
+MedTrack provides an administrator login interface for accessing the hospital asset management dashboard.
+
+---
 
 ## 📂 Project Structure
 
