@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+venv/
+.venv/
+env/
+
+# Environment variables
+.env
+
+# Local database
+medtrack.db
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
